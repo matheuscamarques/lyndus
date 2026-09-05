@@ -1,0 +1,21 @@
+package bonder
+
+const (
+	BENEFITSTATUSOPEN                 = 1
+	BENEFITSTATUSWAITINGPAYMENT       = 2
+	BENEFITSTATUSPAID                 = 3
+	BENEFITSTATUSCANCELED             = 4
+	BENEFITSTATUSEXPIRED              = 5
+	BENEFITSTATUSPAYMENTCONFIRMED     = 6
+	BENEFITSTATUSREQUESTBILLINGTICKET = 7
+)
+
+var BENEFITSTATUSPT = map[int]string{
+	BENEFITSTATUSOPEN:                 "Aberto",
+	BENEFITSTATUSWAITINGPAYMENT:       "Aguardando Pagamento",
+	BENEFITSTATUSPAID:                 "Pago",
+	BENEFITSTATUSCANCELED:             "Cancelado",
+	BENEFITSTATUSEXPIRED:              "Expirado",
+	BENEFITSTATUSPAYMENTCONFIRMED:     "Pagamento Confirmado",
+	BENEFITSTATUSREQUESTBILLINGTICKET: "Aguardando Boleto",
+}
